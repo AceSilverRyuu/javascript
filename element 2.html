@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script language="javascript">
+
+function chngimg(n){
+if(n){
+document.images['fst'].src="skydiving.gif";
+document.images['sec'].src="nope 1.jfif";
+}else{
+document.images['sec'].src="nope 2.jfif";
+document.images['fst'].src="nope 4.jfif";
+}}
+
+</script>
+
+  </head>
+  <body>
+    <table border="1"  background="blnkbut.gif"  rows="1"><tr><td>
+<img src="bar.gif"><br>
+<img src="triangle.gif">   <img src="text.gif"><br>
+<a href="javascript:void(0)" onMouseOver="chngimg(true)"><img src="blnkbut.gif" name="sec" border="0"></a>
+<img src="blnkbut.gif">
+<a href="javascript:alert('Why are you even here?')"><img src="yesbut.gif" border="0"></a>
+<img src="blnkbut.gif">
+<a  href="javascript:chngimg(false)"  onMouseover="chngimg(false)"><img src="nobuttn.gif" name="fst" border="0"></a><br>
+</td></tr>
+</table>
+  </body>
+</html>
